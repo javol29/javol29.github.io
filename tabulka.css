@@ -1,0 +1,328 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+#video {
+  background: rgb(22, 22, 57);
+}
+iframe {
+  width: 80%;
+  height: 900px;
+  justify-content: center;
+  text-align: center;
+  margin-left: 150px;
+  border-color: aqua;
+}
+nav {
+  height: 160px;
+  width: 100%;
+  background-color: rgb(219, 199, 199);
+}
+nav img {
+  width: 105px;
+  position: absolute;
+}
+nav ul {
+  float: right;
+  margin-right: 25px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 155px;
+  margin: 0 15px;
+}
+nav ul li a {
+  position: relative;
+  width: 100%;
+  color: darkblue;
+  font-size: 35px;
+  padding: 10px 0;
+  text-transform: uppercase;
+}
+nav ul li a:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background: rgb(247, 242, 0);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.2s linear;
+}
+nav ul li a:hover:before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.cara1 hr {
+  width: 100%;
+  height: 4px;
+  bottom: 200px;
+  left: 100px;
+  margin-bottom: 50px;
+  background-color: black;
+}
+h1 {
+  text-align: center;
+  color: white;
+}
+body {
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  background-repeat: no-repeat;
+}
+header {
+  background: url(zahlavi/ik.jpg) center / cover;
+}
+table,
+th,
+td {
+  padding: 3rem;
+  border-collapse: collapse;
+  text-align: left;
+}
+thead th {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #e7e9befe;
+}
+td img {
+  width: 14%;
+  height: 90px;
+  margin-right: 0.5rem;
+  border-radius: 20%;
+  vertical-align: middle;
+}
+tbody tr:nth-child(even) {
+  background-color: #0000000b;
+}
+tbody tr:hover {
+  background-color: #eb8888;
+}
+main.table {
+  width: 82vw;
+  height: 1200px;
+  background-color: rgba(6, 0, 47, 0.333);
+  backdrop-filter: blur(3px);
+  box-shadow: 0 0.4rem 0.8rem #0005;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  margin-left: 8%;
+}
+.tableb {
+  width: 95%;
+  height: calc(89% - 1.6rem);
+  background-color: #fffb;
+
+  margin: 1.6rem auto;
+  border-radius: 0.6rem;
+  overflow: auto;
+}
+.tableb::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+.tableb::-webkit-scrollbar-thumb {
+  border-radius: 0.5rem;
+  background-color: #0004;
+  visibility: hidden;
+}
+
+.tableb:hover::-webkit-scrollbar-thumb {
+  visibility: visible;
+}
+table {
+  width: 100%;
+}
+.tableh {
+  height: 100%;
+  height: 10%;
+  background-color: #fff4;
+  padding: 0.8rem 1rem;
+}
+.lehka hr {
+  background-color: rgb(163, 140, 140);
+  width: 90%;
+  margin-left: 90px;
+  height: 0.5px;
+}
+.obrazky {
+  text-align: center;
+  padding-left: 15px;
+}
+.obrazky h5 {
+  text-align: center;
+  font-size: 20px;
+  color: #6f6f6f;
+  margin-top: 20px;
+}
+.obrazky h4 {
+  text-align: center;
+  font-size: 30px;
+  color: #000000;
+  margin-top: 5px;
+}
+.sponzor img {
+  margin-right: 2%;
+  text-align: center;
+  margin-bottom: 2%;
+}
+.vicsponzoru img {
+  margin-right: 1%;
+  text-align: center;
+  margin-bottom: 3%;
+}
+.pepa hr {
+  display: none;
+}
+.footer img {
+  float: right;
+  margin-right: 1%;
+  width: 3%;
+  height: 3%;
+  margin-bottom: 1%;
+}
+.podpis img {
+  margin-top: 2%;
+  padding-right: 40%;
+}
+
+label #btn,
+label #cancel {
+  color: white;
+  font-size: 60px;
+  float: right;
+  line-height: 150px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+@media (max-width: 450px) {
+  nav img {
+    left: 6%;
+    top: 20px;
+    width: 100px;
+  }
+
+  .lehka hr {
+    background-color: rgb(163, 140, 140);
+    width: 100%;
+    margin-left: 1px;
+    height: 0.5px;
+  }
+  .hura img {
+    width: 80%;
+  }
+  iframe {
+    width: 50%;
+    height: 50px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-left: 70px;
+  }
+  td img {
+    width: 60%;
+    height: 90px;
+    margin-right: 0.5rem;
+    border-radius: 20%;
+
+    vertical-align: middle;
+  }
+  nav ul li a {
+    font-size: 17px;
+  }
+}
+@media (max-width: 1118px) {
+  nav img {
+    left: 6%;
+  }
+}
+@media (max-width: 1190px) {
+  label #btn {
+    display: block;
+  }
+  .lehka hr {
+    background-color: rgb(163, 140, 140);
+    width: 99%;
+    margin-left: 0px;
+    height: 0.5px;
+  }
+  iframe {
+    width: 80%;
+    height: 500px;
+    justify-content: center;
+    text-align: center;
+    margin-left: 90px;
+    border-color: aqua;
+  }
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    z-index: 1000;
+  }
+  ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(185, 157, 157);
+    top: 159px;
+    left: -100%;
+    transition: all 0.5s;
+    text-align: center;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 100px;
+  }
+
+  nav ul li a {
+    font-size: 19px;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+  #check:checked ~ label #btn {
+    display: none;
+  }
+  #check:checked ~ label #cancel {
+    display: block;
+  }
+  nav ul li a {
+    position: relative;
+    color: darkblue;
+    font-size: 35px;
+    padding: 10px 0;
+    text-transform: uppercase;
+  }
+  .cara1 hr {
+    width: 100%;
+    height: 4px;
+    bottom: 200px;
+    left: 100px;
+    margin-bottom: 50px;
+    background-color: black;
+  }
+  td img {
+    width: 30%;
+    height: 90px;
+    margin-right: 0.5rem;
+    border-radius: 20%;
+
+    vertical-align: middle;
+  }
+}
